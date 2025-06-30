@@ -1,3 +1,5 @@
+#pragma comment(lib, "legacy_stdio_definitions.lib")
+
 
 #include <LcsLib.h>
 #include <stdio.h>

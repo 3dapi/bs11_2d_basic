@@ -1,3 +1,6 @@
+#pragma comment(lib, "legacy_stdio_definitions.lib")
+
+
 // This is a earthworm game.
 //
 // Author: 박세연(청강대학교: parkse83@hotmail.com)

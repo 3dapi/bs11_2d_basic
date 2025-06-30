@@ -1,3 +1,5 @@
+#pragma comment(lib, "legacy_stdio_definitions.lib")
+
 
 // link the 2d game library
 #if defined(_DEBUG)
