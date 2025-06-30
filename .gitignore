@@ -1,0 +1,69 @@
+########################################
+# unreal
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Content/__ExternalActors__
+Content/__ExternalObjects__
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+
+
+########################################
+# svn
+.svn/
+
+########################################
+# Visual Studio
+_LIB/
+_OBJ/
+_bin/
+Debug/
+Release/
+.vs/
+.vscode/
+.tlog/
+*.tlog
+*.idb
+*.ilk
+*.recipe
+*.log
+*.obj
+*.sln.docstates
+*.user
+*.userosscache
+*.suo
+*.VC.db
+*.opensdf
+
+########################################
+# android studio
+.gradle/
+.cxx/
+build/
+**/main/assets/
+.externalNativeBuild/
+
+########################################
+# xcode
+*.xcuserstate
+**/DerivedData/
+**/xcuserdata/
+
+########################################
+# Rider
+.idea
+JetBrains/
+JetBrains.meta
+_ReSharper.Caches/
+
+########################################
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
