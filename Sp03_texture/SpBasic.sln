@@ -1,22 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36128.20
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpBasic", "SpBasic.vcxproj", "{FA5B21E7-F251-4F8B-8EEC-E74A985A0054}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpBasic", "SpBasic.vcxproj", "{DA32A8AD-D873-4544-AF4A-856AD61E0AC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA5B21E7-F251-4F8B-8EEC-E74A985A0054}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FA5B21E7-F251-4F8B-8EEC-E74A985A0054}.Debug|Win32.Build.0 = Debug|Win32
-		{FA5B21E7-F251-4F8B-8EEC-E74A985A0054}.Release|Win32.ActiveCfg = Release|Win32
-		{FA5B21E7-F251-4F8B-8EEC-E74A985A0054}.Release|Win32.Build.0 = Release|Win32
+		{DA32A8AD-D873-4544-AF4A-856AD61E0AC0}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA32A8AD-D873-4544-AF4A-856AD61E0AC0}.Debug|x86.Build.0 = Debug|Win32
+		{DA32A8AD-D873-4544-AF4A-856AD61E0AC0}.Release|x86.ActiveCfg = Release|Win32
+		{DA32A8AD-D873-4544-AF4A-856AD61E0AC0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77F75E05-2781-4F70-8DE1-B0E7005CA9E2}
 	EndGlobalSection
 EndGlobal
