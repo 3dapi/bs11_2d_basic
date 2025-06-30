@@ -27,5 +27,5 @@ enum
 {
 	GAME_INIT = 0,
 	GAME_PLAY = 1,
-	GAME_END  = 2,
+	//GAME_END  = 2,
 };

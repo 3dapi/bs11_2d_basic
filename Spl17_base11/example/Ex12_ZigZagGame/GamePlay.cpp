@@ -4,6 +4,7 @@
 
 #include "GameHeader.h"
 
+int g_GamePhase = GAME_INIT;
 
 int		ImgArrayInit();					// Image Array Init
 void	ImgArrayDestroy();				// Image Array Delete
@@ -97,6 +98,7 @@ int GameInit()
 	//Key board Event
 	nSound[1] = LcsLib_SoundLoad("sound/move3.wav");
 
+	g_GamePhase = GAME_PLAY;
 //	LcsLib_SoundPlay(nSound[0]);
 	return 0;
 }
@@ -111,11 +113,6 @@ int GameDestroy()
 
 int	GamePlay()
 {
-//	if(false== m_bSuccess && !LcsLib_SoundIsPlaying(nSound[0]))
-//	{
-//		LcsLib_SoundReset(nSound[0]);
-//		LcsLib_SoundPlay(nSound[0]);
-//	}
 
 	mouseX = LcsLib_GetMouseX();
 	mouseY = LcsLib_GetMouseY();
@@ -127,13 +124,27 @@ int	GamePlay()
 
 	int	i,j;
 	int	nCntSuccess=0;
-
-	if(0 == m_pKeyOld[VK_HOME] && m_pKeyCur[VK_HOME] )
+	
+	if(m_bSuccess && (0 == m_pKeyOld[VK_HOME] && m_pKeyCur[VK_HOME]) )
 	{
 		ImgArrayDestroy();
+
+		g_GamePhase = GAME_INIT;
 		return 0;
 	}
 
+	// cheat
+	if(0 == m_pKeyOld[VK_CANCEL] && m_pKeyCur[VK_CANCEL])
+	{
+		for(i=0; i< m_nCntRow; ++i)
+		{
+			for(j=0; j< m_nCntCol; ++j)
+			{
+				m_pMapBit[i*m_nCntCol + j].nIdx =  m_pMapImg[i][j].nIdx;
+			}
+		}
+		return 0;
+	}
 
 	// 우측 이동...
 	if(0 == m_pKeyOld[VK_RIGHT] && m_pKeyCur[VK_RIGHT] )
@@ -277,20 +288,14 @@ int GameRender()
 
 	else
 	{
-		RECT rc={0,0, m_dScreenW, m_dScreenH};
+		RECT rc={0,0, (LONG)m_dScreenW, (LONG)m_dScreenH};
 		LcsLib_Draw2D(m_pTx[m_nImg], &rc);
 
 		int c= LcsLib_FontDrawText(nFont1, 200, 300, 500, 340, 0xffFFBB77, "추카추가 !!!");
 	}
 
-
-
 	return 0;
 }
-
-
-
-
 
 
 
@@ -449,14 +454,6 @@ void ImgArrayShuffle()
 	}
 }
 
-
-
-
-
-int g_GamePhase = GAME_INIT;
-
-
-
 int GameFrameMove()
 {
 	switch(g_GamePhase)
@@ -469,9 +466,11 @@ int GameFrameMove()
 			GamePlay();
 			break;
 
-		case GAME_END:
-			GameEnd();
-			break;
+		//case GAME_END:
+		//	GameEnd();
+		//	break;
 	}
+
+	return 0;
 }
 

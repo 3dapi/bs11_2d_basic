@@ -27,6 +27,11 @@ FLOAT	g_dDir    = 1.0F;		// Right or left rotation direction
 
 int Render()
 {
+	// test....
+	Sleep(40);
+
+
+
 	FLOAT fAngle = acosf(g_vcVcl.x);
 	if(0 > g_vcVcl.y)
 		fAngle *= -1.F;
@@ -49,9 +54,6 @@ int Render()
 
 	return 0;
 }
-
-
-
 
 
 int main()

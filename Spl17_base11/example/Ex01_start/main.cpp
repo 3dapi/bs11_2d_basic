@@ -19,7 +19,7 @@ int main()
 	printf("Starting ...\n\n");
 
 	// 扩档快 积己
-	LcsLib_CreateWin(100, 100, 800, 600, "My First Game Window");
+	LcsLib_CreateWin(100, 100, 1024, 600, "My First Game Window");
 
 	// 角青
 	LcsLib_Run();
