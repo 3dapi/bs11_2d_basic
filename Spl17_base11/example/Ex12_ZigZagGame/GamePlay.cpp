@@ -4,6 +4,7 @@
 
 #include "GameHeader.h"
 
+
 int g_GamePhase = GAME_INIT;
 
 int		ImgArrayInit();					// Image Array Init
@@ -134,7 +135,7 @@ int	GamePlay()
 	}
 
 	// cheat
-	if(0 == m_pKeyOld[VK_CANCEL] && m_pKeyCur[VK_CANCEL])
+	if(0 == m_pKeyOld[VK_INSERT] && m_pKeyCur[VK_INSERT])
 	{
 		for(i=0; i< m_nCntRow; ++i)
 		{
