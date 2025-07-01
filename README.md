@@ -8,7 +8,7 @@
 - 설치 확인
   - ※ 프로젝트가 DXSDK_DIR를 사용해서 DirectX9의 헤더 파일와 lib 파일 경로를 설정합니다. DXSDK_DIR는 반드시 필요합니다.
       - 수동으로 DirectX 9 의 헤더와 Lib파일을 복사해서 PC에 복사해 왔다면, 환경변수에서 DXSDK_DIR를 지정하고 경로를 지정하십시오.
-      - ![image](https://github.com/user-attachments/assets/9425d1b2-b29d-49fe-9b3c-4f60b63e85bc)
+      - <img src="https://github.com/user-attachments/assets/9425d1b2-b29d-49fe-9b3c-4f60b63e85bc" width="600">
 
   - ex)DXSDK_DIR 확인(dos terminal)
     - C:\Users\user>echo %DXSDK_DIR%
@@ -43,6 +43,8 @@
   - Ex04_Keyboard
 - 스프라이트 애니메이션
   - Ex05_Animation
+  - <img src="https://github.com/user-attachments/assets/12c0a4a2-1f17-4925-8e26-bf17e3792524" width="400">
+
 - 한글 문자열 출력
   - Ex06_StringOut
 - 사운드
@@ -50,5 +52,9 @@
 - 라이브러리를 활요한 게임
   - 스네이크 게임
     - Ex11_Snake
+    - <img src="https://github.com/user-attachments/assets/f773510c-5cc5-492d-95c2-f7bd5ae77f60" width="400">
+
   - 그림 맞추기게임
     - Ex12_ZigZagGame
+    - <img src="https://github.com/user-attachments/assets/1243d45e-f785-48c3-981e-e63bafbcfbb9" width="400">
+
