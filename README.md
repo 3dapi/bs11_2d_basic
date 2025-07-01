@@ -47,6 +47,8 @@
 
 - 한글 문자열 출력
   - Ex06_StringOut
+  - <img src="https://github.com/user-attachments/assets/4bf604e9-94ed-4ee6-94ae-35b0a78defee" width="400">
+
 - 사운드
   - Ex08_Sound
 - 라이브러리를 활요한 게임
