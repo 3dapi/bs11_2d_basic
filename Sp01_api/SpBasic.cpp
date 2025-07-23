@@ -5,7 +5,7 @@
 
 #pragma warning( disable : 4996)
 
-
+#pragma comment(lib, "legacy_stdio_definitions.lib")
 #pragma comment(linker, "/subsystem:windows")
 
 #include <windows.h>

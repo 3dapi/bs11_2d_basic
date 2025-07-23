@@ -13,6 +13,7 @@
 #define __STDAFX_H_
 
 
+#pragma comment(lib, "legacy_stdio_definitions.lib")
 // link the 2d game library
 #if defined(_DEBUG)
   #pragma comment(lib, "../../lib/LcsLib_.lib")

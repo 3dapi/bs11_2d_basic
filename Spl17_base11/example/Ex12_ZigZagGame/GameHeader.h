@@ -15,6 +15,7 @@ int   GameDestroy();
 #define SAFE_RELEASE(p)      { if(p) { (p)->Release(); (p)=NULL; } }
 
 
+#pragma comment(lib, "legacy_stdio_definitions.lib")
 // link the 2d game library
 #if defined(_DEBUG)
   #pragma comment(lib, "../../lib/LcsLib_.lib")
